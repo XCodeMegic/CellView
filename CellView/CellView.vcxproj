@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5B64449-2C6F-4B3F-BB58-4D620B7A0119}</ProjectGuid>
+    <RootNamespace>CellView</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GLOOX_IMPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Include;..\addition;..\components;..\chartool;..\worker;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\addition\addition.h" />
+    <ClInclude Include="..\addition\CellConnection.h" />
+    <ClInclude Include="..\addition\CellIqManager.h" />
+    <ClInclude Include="..\addition\CellPresenceMgr.h" />
+    <ClInclude Include="..\addition\extdefined.h" />
+    <ClInclude Include="..\addition\ExtDocDown.h" />
+    <ClInclude Include="..\addition\ExtDocPlay.h" />
+    <ClInclude Include="..\addition\ExtUserLogin.h" />
+    <ClInclude Include="..\addition\ExtScreenCap.h" />
+    <ClInclude Include="..\addition\ExtSenceCtrl.h" />
+    <ClInclude Include="..\addition\ExtSenceUpdate.h" />
+    <ClInclude Include="..\addition\x_motion.h" />
+    <ClInclude Include="..\chartool\char_code_change.h" />
+    <ClInclude Include="..\components\XButton.h" />
+    <ClInclude Include="..\components\XControlBase.h" />
+    <ClInclude Include="..\components\XLabel.h" />
+    <ClInclude Include="..\components\XPicture.h" />
+    <ClInclude Include="..\worker\XCaptureScreen.h" />
+    <ClInclude Include="..\worker\XHttpGet.h" />
+    <ClInclude Include="CellView.h" />
+    <ClInclude Include="CellViewDlg.h" />
+    <ClInclude Include="DocDownTask.h" />
+    <ClInclude Include="DocPlayTask.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScreenCapTask.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TaskBase.h" />
+    <ClInclude Include="TaskManager.h" />
+    <ClInclude Include="ViewMotion.h" />
+    <ClInclude Include="XmppInstance.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\addition\CellConnection.cpp" />
+    <ClCompile Include="..\addition\CellIqManager.cpp" />
+    <ClCompile Include="..\addition\CellPresenceMgr.cpp" />
+    <ClCompile Include="..\addition\ExtDocDown.cpp" />
+    <ClCompile Include="..\addition\ExtDocPlay.cpp" />
+    <ClCompile Include="..\addition\ExtUserLogin.cpp" />
+    <ClCompile Include="..\addition\ExtScreenCap.cpp" />
+    <ClCompile Include="..\addition\ExtSenceCtrl.cpp" />
+    <ClCompile Include="..\addition\ExtSenceUpdate.cpp" />
+    <ClCompile Include="..\chartool\char_code_change.cpp" />
+    <ClCompile Include="..\components\XButton.cpp" />
+    <ClCompile Include="..\components\XControlBase.cpp" />
+    <ClCompile Include="..\components\XLabel.cpp" />
+    <ClCompile Include="..\components\XPicture.cpp" />
+    <ClCompile Include="..\worker\XCaptureScreen.cpp" />
+    <ClCompile Include="..\worker\XHttpGet.cpp" />
+    <ClCompile Include="CellView.cpp" />
+    <ClCompile Include="CellViewDlg.cpp" />
+    <ClCompile Include="DocDownTask.cpp" />
+    <ClCompile Include="DocPlayTask.cpp" />
+    <ClCompile Include="ScreenCapTask.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TaskBase.cpp" />
+    <ClCompile Include="TaskManager.cpp" />
+    <ClCompile Include="ViewMotion.cpp" />
+    <ClCompile Include="XmppInstance.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CellView.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CellView.rc2" />
+    <None Include="res\jpg1.bin" />
+    <None Include="res\jpg2.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\MyImages\043cb3081688a7c6648c5d2d05fa75c0.jpg" />
+    <Image Include="..\..\..\..\MyImages\99free-png\sign_in.png" />
+    <Image Include="..\..\..\..\MyImages\99free-png\sign_out.png" />
+    <Image Include="..\..\..\..\MyImages\resource\BT_CLOSE.png" />
+    <Image Include="..\..\..\..\MyImages\resource\BT_MIN.png" />
+    <Image Include="..\..\..\..\MyImages\resource\Left.png" />
+    <Image Include="..\..\..\..\MyImages\resource\Left_1.png" />
+    <Image Include="..\..\..\..\MyImages\resource\Left_2.png" />
+    <Image Include="..\..\..\..\myimages\resource\png2.png" />
+    <Image Include="..\..\..\..\MyImages\resource\right.png" />
+    <Image Include="..\..\..\..\MyImages\resource\Right_1.png" />
+    <Image Include="..\..\..\..\MyImages\resource\Right_2.png" />
+    <Image Include="..\..\..\..\WindowsPic\c60872410e6b3a062535449c11753aec.jpg" />
+    <Image Include="res\CellView.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CellView.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

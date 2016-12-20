@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="addition">
+      <UniqueIdentifier>{fb2291f5-9197-4bc8-9cbd-e1e8a2828fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{311e1719-bf4b-4273-8b59-bec9a4cc771c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chartool">
+      <UniqueIdentifier>{8462e512-df81-4038-971a-a4b41a3e026f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="worker">
+      <UniqueIdentifier>{504aabb4-12aa-47de-b43f-7c4883472def}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CellView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CellViewDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewMotion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XmppInstance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\CellConnection.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\CellIqManager.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\CellPresenceMgr.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\x_motion.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\components\XControlBase.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\components\XButton.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chartool\char_code_change.h">
+      <Filter>chartool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\ExtDocDown.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\ExtDocPlay.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\ExtScreenCap.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\extdefined.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\ExtSenceCtrl.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\ExtSenceUpdate.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\addition.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addition\ExtUserLogin.h">
+      <Filter>addition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\components\XLabel.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\components\XPicture.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocDownTask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocPlayTask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCapTask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\worker\XCaptureScreen.h">
+      <Filter>worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\worker\XHttpGet.h">
+      <Filter>worker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CellView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CellViewDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewMotion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XmppInstance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\CellConnection.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\CellIqManager.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\CellPresenceMgr.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\components\XControlBase.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\components\XButton.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chartool\char_code_change.cpp">
+      <Filter>chartool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\ExtDocDown.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\ExtDocPlay.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\ExtScreenCap.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\ExtSenceCtrl.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\ExtSenceUpdate.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\addition\ExtUserLogin.cpp">
+      <Filter>addition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\components\XLabel.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\components\XPicture.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocDownTask.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocPlayTask.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenCapTask.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worker\XCaptureScreen.cpp">
+      <Filter>worker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worker\XHttpGet.cpp">
+      <Filter>worker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CellView.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CellView.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\jpg1.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\jpg2.bin">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CellView.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\BT_CLOSE.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\myimages\resource\png2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\BT_MIN.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\WindowsPic\c60872410e6b3a062535449c11753aec.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\Left.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\right.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\043cb3081688a7c6648c5d2d05fa75c0.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\99free-png\sign_in.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\99free-png\sign_out.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\Left_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\Right_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\Left_2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\MyImages\resource\Right_2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
