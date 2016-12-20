@@ -50,6 +50,7 @@ BEGIN_MESSAGE_MAP(CCellViewDlg, CDialogEx)
 	ON_MESSAGE(WM_XMPPMSG, OnXmppMsg)
 	ON_MESSAGE(WM_TASKMSG, OnTaskMsg)
 	ON_WM_MOVE()
+	ON_WM_ACTIVATE()
 END_MESSAGE_MAP()
 
 
@@ -621,6 +622,18 @@ void CCellViewDlg::OnMove(int x, int y)
 
 	// TODO:  在此处添加消息处理程序代码
 
+	XCtrlList::iterator it = m_ctrls->begin();
+	for (; it != m_ctrls->end(); it++)
+	{
+		(*it)->ReqRePaint();
+	}
+}
+
+void CCellViewDlg::OnActivate(UINT nState, CWnd* pWndOther, BOOL bMinimized)
+{
+	CDialogEx::OnActivate(nState, pWndOther, bMinimized);
+	
+	// TODO:  在此处添加消息处理程序代码
 	XCtrlList::iterator it = m_ctrls->begin();
 	for (; it != m_ctrls->end(); it++)
 	{

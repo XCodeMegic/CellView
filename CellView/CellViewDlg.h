@@ -100,4 +100,5 @@ public:
 	afx_msg void OnMove(int x, int y);
 	CString m_StringID;
 	CString m_StringPass;
+	afx_msg void OnActivate(UINT nState, CWnd* pWndOther, BOOL bMinimized);
 };
